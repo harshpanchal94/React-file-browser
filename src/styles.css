@@ -1,4 +1,4 @@
-.TreeView {
+TreeView {
   flex-grow: 1;
   height: "100%";
   width: "100%";
@@ -6,10 +6,18 @@
   overflow-y: "auto";
 }
 
-.Box .OutlinedInput {
-  height: 20;
+Typography {
+  font-size: 12;
 }
 
-.Typography {
-  font-size: 12;
+.textField {
+  height: 24px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
