@@ -255,11 +255,12 @@ export default class Tree extends React.Component {
     const customLabel = (data, path) => {
       if (rename) {
         return (
-          <Box display="flex">
+          <Box className="textField" display="flex">
             {path !== activeItemId && <Typography>{data.name}</Typography>}
 
             {path === activeItemId && (
               <OutlinedInput
+                className="textField"
                 margin="dense"
                 autoFocus
                 placeholder={data.name}
@@ -380,6 +381,10 @@ export default class Tree extends React.Component {
             )}
           </Menu>
         )}
+
+        <Typography className="footer" variant="caption">
+          Right click on a country to Rename / Delete it
+        </Typography>
       </div>
     );
   }
